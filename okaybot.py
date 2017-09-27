@@ -5,10 +5,9 @@ import random
 import sqlite3
 
 TOKEN = open('.private/TOKEN').read()
-admin_id = 104663766
-support_chat = -1001098463982
+admin_id = open('.private/ADMIN_ID').read()
+support_chat = open('.private/SUPPOER_CHAT').read()
 bot = telebot.TeleBot(TOKEN)
-
 
 def report_error(e, other_info = ""):
     try:
