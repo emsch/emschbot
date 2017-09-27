@@ -4,7 +4,7 @@ from datetime import datetime
 import random
 import sqlite3
 
-TOKEN = "400440521:AAHsrTvlhvsfOEInYX02O-7EI4aMaWsgRlM"
+TOKEN = open('.private/TOKEN').read()
 admin_id = 104663766
 support_chat = -1001098463982
 bot = telebot.TeleBot(TOKEN)
